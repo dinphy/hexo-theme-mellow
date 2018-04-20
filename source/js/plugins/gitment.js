@@ -1,6 +1,6 @@
-let id = window.location.pathname;
+let id = article_date;
 
-if (id === "/") { //home
+if (id === null) { //home
     const idGroup = [...document.querySelectorAll(".post-comments-counter")].map(link => {
         return link.id;
     });
@@ -16,6 +16,7 @@ if (DC.g.lazy) {
     if (main) {
         main.style.display = "none";
     }
+
     function ShowGitment() {
         const moreBtn = document.getElementById("gitment-display-button");
         moreBtn.style.display = "none";

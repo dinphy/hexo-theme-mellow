@@ -1,2 +1,5 @@
 <script type="text/javascript" src="<%- url_for(theme_js("/js/plugins/gitmint.browser", cache)) %>"></script>
+<script type="text/javascript">
+    window.article_date = "<%- page.date ? page.date.format('YYYY-MM-DD H:mm') : null %>"
+</script>
 <script type="text/javascript" src="<%- url_for(theme_js("/js/plugins/gitment", cache)) %>"></script>
